@@ -23,7 +23,7 @@ const Layout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
         <Provider store={store}>
             <ThemeProvider enableSystem={true}>
                 <Head>
-                    <title>Skill Seeker</title>
+                    <title>Belém Aberta</title>
                 </Head>
                 <div
                     className={cs(
@@ -50,7 +50,7 @@ const Layout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
                 <ToastContainer
                     autoClose={2000}
                     hideProgressBar={true}
-                    rtl={locale === 'en' ? false : true}
+                    rtl={false}
                     position={locale === 'en' ? 'top-right' : 'top-left'}
                 />
             </ThemeProvider>

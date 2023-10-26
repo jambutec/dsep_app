@@ -5,7 +5,7 @@ export default function Document() {
             <Head>
                 <meta
                     name="description"
-                    content="A retail app powered by beckn protocol"
+                    content="Um aplicativo para educação digital  para todos"
                 />
                 <link
                     rel="preconnect"
@@ -22,7 +22,7 @@ export default function Document() {
                 />
                 <link
                     rel="shortcut icon"
-                    href="/images/appLogo.svg"
+                    href="/images/belem_tag.svg"
                 />
             </Head>
             <body>
