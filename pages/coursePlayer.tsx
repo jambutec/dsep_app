@@ -97,7 +97,7 @@ const CoursePlayer = () => {
                             value={4}
                         />
                         <p className="text-sm text-palette-mute rtl:mr-2 ltr:ml-2 pl-1 ">
-                            {4} {t.stars}
+                            {savedProduct.tags.Rating} {t.stars}
                         </p>
                     </div>
 
