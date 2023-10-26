@@ -385,6 +385,7 @@ const en: { [key: string]: string } = {
     offeredBy: 'Sold by',
     by: 'by',
     coursesPurchased: 'Courses Purchased',
-    inProgress: ' In Progress',
+    inProgress: 'In Progress',
+    of: 'of',
 }
 export default en

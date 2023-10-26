@@ -312,7 +312,7 @@ const pt: { [key: string]: string } = {
     explorePlaces: 'Explorar lugares próximos',
     comingSoon: 'Em breve !',
     confirmOrder: 'Confirmar pedido',
-    orderPlacedAt: 'Colocado em',
+    orderPlacedAt: 'Adicionado em',
     ordersFulfilled: 'Pedidos atendidos',
     subTotal: 'Subtotal',
     deliveryCharge: 'Taxas de entrega',
@@ -391,5 +391,6 @@ const pt: { [key: string]: string } = {
     by: 'por',
     coursesPurchased: 'Curso comprado',
     inProgress: 'em andamento',
+    of: 'de',
 }
 export default pt
