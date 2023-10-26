@@ -381,7 +381,5 @@ const en: { [key: string]: string } = {
     startCourse: 'Start Course',
     viewCourse: 'View Course',
     fetchingOrderStatus: 'Fetching Order details',
-    searchForCourses: 'Search for courses',
-    offeredBy: 'Sold by',
 }
 export default en
