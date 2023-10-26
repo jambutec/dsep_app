@@ -384,5 +384,7 @@ const pt: { [key: string]: string } = {
     naText: 'ND',
     startCourse: 'Iniciar curso',
     phoneNumberError: 'Numero do fone incorreto',
+    viewCourse: 'View Course',
+    fetchingOrderStatus: 'Fetching Order details',
 }
 export default pt
