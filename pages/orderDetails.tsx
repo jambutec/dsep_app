@@ -14,6 +14,7 @@ import Accordion from '../components/accordion/Accordion'
 import { useLanguage } from '../hooks/useLanguage'
 import { ResponseModel } from '../lib/types/responseModel'
 import {
+    convertTimestampToDdMmYyyyHhMmPM,
     getConfirmMetaDataForBpp,
     getOrderPlacementTimeline,
     getPayloadForStatusRequest,
@@ -257,7 +258,7 @@ const OrderDetails = () => {
                     >
                         <Text>{t.orderPlacedAt}</Text>
                         <Text>
-                            {getOrderPlacementTimeline(
+                            {convertTimestampToDdMmYyyyHhMmPM(
                                 orderFromConfirmData.created_at
                             )}
                         </Text>
@@ -277,7 +278,7 @@ const OrderDetails = () => {
                                     >
                                         {confirmData.length}
                                     </Text>
-                                    <Text as={'span'}>of</Text>
+                                    <Text as={'span'}>{t.of}</Text>
                                     <Text
                                         as={'span'}
                                         pl={'2px'}
@@ -355,7 +356,7 @@ const OrderDetails = () => {
                                             fontWeight="600"
                                             color={'#FDC025'}
                                         >
-                                            In Progress
+                                            {t.inProgress}
                                         </Text>
                                     ) : (
                                         <Text
@@ -400,7 +401,9 @@ const OrderDetails = () => {
                                     pl="28px"
                                     fontSize={'12px'}
                                 >
-                                    21st Jun 2021, 12:11pm
+                                    {convertTimestampToDdMmYyyyHhMmPM(
+                                        orderFromConfirmData.created_at
+                                    )}
                                 </Text>
                             </Box>
                             {status === 'progress' ? (
