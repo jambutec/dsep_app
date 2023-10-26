@@ -55,7 +55,7 @@ const DetailsSection: React.FC<Props> = ({ product }) => {
                     mb={'10px'}
                     fontSize={'14px'}
                 >
-                    by {product.bppName}
+                    {t.by} {product.bppName}
                 </Text>
 
                 {product.tags.foodType ? (

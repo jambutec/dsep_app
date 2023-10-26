@@ -393,7 +393,7 @@ const OrderDetails = () => {
                                         fontSize="15px"
                                         fontWeight={'600'}
                                     >
-                                        Courses Purchased
+                                        {t.coursesPurchased}
                                     </Text>
                                 </Flex>
                                 <Text

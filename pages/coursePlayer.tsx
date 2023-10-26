@@ -81,7 +81,7 @@ const CoursePlayer = () => {
                     mb={'10px'}
                     fontSize={'14px'}
                 >
-                    by {savedProduct.bppName}
+                    {t.by} {savedProduct.bppName}
                 </Text>
             </Flex>
             <hr className="mt-1 hidden md:block" />

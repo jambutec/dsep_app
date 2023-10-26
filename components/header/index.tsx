@@ -74,6 +74,7 @@ const getHeaderTitleForPage = (
     locale: string | undefined
 ) => {
     const values = locale === 'en' ? headerValues : headerValuesFrench
+
     switch (true) {
         case storeHeaderBlackList.includes(pathName):
             return <Text fontWeight={600}>{values[pathName]}</Text>

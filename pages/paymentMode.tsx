@@ -51,7 +51,7 @@ function PaymentMode() {
                     marginBottom={'8px'}
                     fontSize={'17px'}
                 >
-                    Other
+                    {t.other}
                 </Text>
                 <CardWithCheckBox
                     setChecked={setChecked}
