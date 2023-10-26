@@ -384,9 +384,12 @@ const pt: { [key: string]: string } = {
     naText: 'ND',
     startCourse: 'Iniciar curso',
     phoneNumberError: 'Numero do fone incorreto',
-    viewCourse: 'View Course',
-    fetchingOrderStatus: 'Fetching Order details',
+    viewCourse: 'Ver o curso',
+    fetchingOrderStatus: 'Buscando detalhes do pedido',
     searchForCourses: 'Procurar cursos',
     offeredBy: 'Oferecido por',
+    by: 'por',
+    coursesPurchased: 'Curso comprado',
+    inProgress: 'em andamento',
 }
 export default pt

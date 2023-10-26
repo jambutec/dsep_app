@@ -2,10 +2,10 @@
 
 const nextConfig = {
     reactStrictMode: false,
-  i18n: {
-      locales: ['en', 'pt'],
-      defaultLocale: 'en',
-      localeDetection: false
+    i18n: {
+        locales: ['en', 'pt'],
+        defaultLocale: 'en',
+        localeDetection: false,
     },
     trailingSlash: true,
     images: {
@@ -16,6 +16,7 @@ const nextConfig = {
             'market.becknprotocol.io',
             'retail-osm-stage.becknprotocol.io',
             'retail-osm-prod.becknprotocol.io',
+            'retail.beckn.com.br',
         ],
     },
     webpack: function (config) {

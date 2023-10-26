@@ -289,7 +289,7 @@ const CheckoutPage = () => {
                             <span style={{ fontWeight: 'bold' }}>
                                 ‘FirstLearn5k’
                             </span>
-                            discount applied!
+                            {t.discountApplied}!
                         </Text>
                     </Flex>
                 </DetailsCard>
