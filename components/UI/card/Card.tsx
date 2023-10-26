@@ -9,6 +9,7 @@ import { Box, Flex, Text, Image } from '@chakra-ui/react'
 import StarIcon from '../../../public/images/Star.svg'
 import greenVegIcon from '../../../public/images/greenVeg.svg'
 import redNonVegIcon from '../../../public/images/redNonVeg.svg'
+import { useLanguage } from '../../../hooks/useLanguage'
 
 interface Props {
     product: RetailItem
@@ -16,6 +17,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ product }) => {
     const encodedProduct = window.btoa(toBinary(JSON.stringify(product)))
+    const { t } = useLanguage()
 
     return (
         <Box
@@ -90,7 +92,7 @@ const Card: React.FC<Props> = ({ product }) => {
                             alignItems={'center'}
                             mb={'8px'}
                         >
-                            <Text fontWeight={'600'}>Sold by:</Text>
+                            <Text fontWeight={'600'}>{t.offeredBy}:</Text>
                             <Text pl={'3px'}>{(product as any).bppName}</Text>
                         </Flex>
                         <Flex

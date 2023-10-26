@@ -27,7 +27,7 @@ const LandingPage: React.FC = () => {
                         className={Styles.input_box}
                         type="text"
                         name="search_input"
-                        placeholder="Search for courses"
+                        placeholder={t.searchForCourses}
                         onChange={(e: React.BaseSyntheticEvent) =>
                             setSearchTerm(e.target.value)
                         }
@@ -35,15 +35,13 @@ const LandingPage: React.FC = () => {
                             event.key === 'Enter' && navigateToSearchResults()
                         }
                     />
-                    <button
-                        className={Styles.search_button}
-                    >
+                    <button className={Styles.search_button}>
                         <FaSearch
                             onClick={(e) => {
-                                if(searchTerm) {
-                                  navigateToSearchResults()
+                                if (searchTerm) {
+                                    navigateToSearchResults()
                                 }
-                               e.preventDefault()
+                                e.preventDefault()
                             }}
                         />
                     </button>

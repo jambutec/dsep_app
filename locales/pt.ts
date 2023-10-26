@@ -305,7 +305,7 @@ const pt: { [key: string]: string } = {
     orderConfirm: 'Pedido confirmado!',
     confirmOrderMessage:
         'Obrigado! Nosso agente de entrega entregará seu pedido',
-    currencySymbol: '₹',
+    currencySymbol: 'R$',
     saveShippingDetails: 'Salvar detalhes de envio',
     saveBillingDetails: 'Salvar detalhes de cobrança',
     addBillingDetails: 'Adicionar detalhes de cobrança',
@@ -386,5 +386,7 @@ const pt: { [key: string]: string } = {
     phoneNumberError: 'Numero do fone incorreto',
     viewCourse: 'View Course',
     fetchingOrderStatus: 'Fetching Order details',
+    searchForCourses: 'Procurar cursos',
+    offeredBy: 'Oferecido por',
 }
 export default pt
