@@ -69,6 +69,7 @@ function PaymentMode() {
                     color={'rgba(var(--text-color))'}
                     isDisabled={!checked}
                     handleOnClick={() => {
+                        dispatch(cartActions.clearCart())
                         router.push('/orderConfirmation')
                     }}
                 />

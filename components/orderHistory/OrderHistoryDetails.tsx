@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box, Flex, Text, Image } from '@chakra-ui/react'
-import pendingIcon from '../../public/images/pending.svg'
 import completedIcon from '../../public/images/completed.svg'
+import { useLanguage } from '../../hooks/useLanguage'
 
 interface OrderHistoryDetailsPropsModel {
     createdAt: string
@@ -15,6 +15,8 @@ interface OrderHistoryDetailsPropsModel {
 const OrderHistoryDetails: React.FC<OrderHistoryDetailsPropsModel> = (
     props
 ) => {
+    const { t } = useLanguage()
+
     return (
         <Box>
             <Text
@@ -30,35 +32,37 @@ const OrderHistoryDetails: React.FC<OrderHistoryDetailsPropsModel> = (
                 pb={'5px'}
                 fontSize={'10px'}
             >
-                Placed at {props.createdAt}
+                {t.orderPlacedAt} {props.createdAt}
             </Text>
 
             <Text
                 pb={'5px'}
                 fontSize={'10px'}
             >
-                Order ID: {props.orderId}
+                {t.orderId}: {props.orderId}
             </Text>
             <Text
                 fontWeight="600"
                 pb={'5px'}
                 fontSize={'12px'}
             >
-                ₹ {props.totalAmount}
+                {t.currencySymbol} {props.totalAmount}
             </Text>
             <Flex
                 fontSize={'10px'}
                 justifyContent={'space-between'}
                 alignItems={'center'}
             >
-                <Text>{props.quantity} items</Text>
+                <Text>
+                    {props.quantity} {t.items}
+                </Text>
                 <Flex>
                     {/* eslint-disable-next-line jsx-a11y/alt-text */}
                     <Image
                         src={completedIcon}
                         paddingRight={'6px'}
                     />
-                    <Text>Purchased</Text>
+                    <Text>{t.purchased}</Text>
                 </Flex>
             </Flex>
         </Box>

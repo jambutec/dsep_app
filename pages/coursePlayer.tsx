@@ -13,7 +13,6 @@ import { useLanguage } from '../hooks/useLanguage'
 const CoursePlayer = () => {
     const [domLoaded, setDomLoaded] = useState(false)
     const [savedProduct, setSavedProduct] = useState<RetailItem | null>(null)
-    const cartItems = useSelector((state: ICartRootState) => state.cart.items)
     const { t } = useLanguage()
 
     useEffect(() => {
@@ -23,23 +22,18 @@ const CoursePlayer = () => {
     useEffect(() => {
         const { itemId } = Router.query
 
-        if (localStorage && cartItems.length) {
-            const itemToBeDisplayed = cartItems.find(
-                (item) => item.id === itemId
+        if (localStorage) {
+            const selectedItemsForTransac = localStorage.getItem(
+                'selectedItemForTransaction'
             )
-
-            localStorage.setItem(
-                'selectedItem',
-                JSON.stringify(itemToBeDisplayed)
-            )
-        }
-    }, [])
-
-    useEffect(() => {
-        if (localStorage && localStorage.getItem('selectedItem')) {
-            const stringifiedSelectedItem = localStorage.getItem('selectedItem')
-            if (stringifiedSelectedItem) {
-                setSavedProduct(JSON.parse(stringifiedSelectedItem))
+            if (selectedItemsForTransac) {
+                const parsedSelectedItemsForTransac = JSON.parse(
+                    selectedItemsForTransac
+                )
+                const itemToBeDisplayed = parsedSelectedItemsForTransac.find(
+                    (item: RetailItem) => item.id === itemId
+                )
+                setSavedProduct(itemToBeDisplayed)
             }
         }
     }, [])

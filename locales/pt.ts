@@ -392,5 +392,7 @@ const pt: { [key: string]: string } = {
     coursesPurchased: 'Curso comprado',
     inProgress: 'em andamento',
     of: 'de',
+    myCourses: 'Meus cursos',
+    purchased: 'comprou',
 }
 export default pt

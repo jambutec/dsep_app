@@ -6,7 +6,7 @@ import Loader from '../components/loader/Loader'
 import OrderHistoryDetails from '../components/orderHistory/OrderHistoryDetails'
 import { useLanguage } from '../hooks/useLanguage'
 import useRequest from '../hooks/useRequest'
-import { getOrderPlacementTimeline } from '../utilities/confirm-utils'
+import { convertTimestampToDdMmYyyyHhMmPM } from '../utilities/confirm-utils'
 import {
     getTotalPriceOfSingleOrder,
     getTotalQuantityOfSingleOrder,
@@ -58,7 +58,7 @@ const OrderHistory = () => {
     }
 
     return orderHistoryList.map((orderInHistory: any, index: number) => {
-        const createdAt = getOrderPlacementTimeline(
+        const createdAt = convertTimestampToDdMmYyyyHhMmPM(
             orderInHistory.orders.length > 0
                 ? orderInHistory.orders[0].message.responses[0].message.order
                       .created_at
