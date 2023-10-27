@@ -387,5 +387,7 @@ const en: { [key: string]: string } = {
     coursesPurchased: 'Courses Purchased',
     inProgress: 'In Progress',
     of: 'of',
+    myCourses: 'My Courses',
+    purchased: 'Purchased',
 }
 export default en

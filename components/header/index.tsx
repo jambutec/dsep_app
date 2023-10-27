@@ -172,7 +172,7 @@ const TopHeader: React.FC<TopHeaderProps> = ({ handleMenuClick }) => {
                         src="/images/orderHistory.svg"
                         alt="Order history icon"
                     />
-                    {t['myCourses']}
+                    {t.myCourses}
                 </div>
             </BottomModal>
         </>
