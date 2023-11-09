@@ -28,9 +28,6 @@ import { useSelector } from 'react-redux'
 import { ICartRootState, TransactionIdRootState } from '../lib/types/cart'
 import useRequest from '../hooks/useRequest'
 import { useRouter } from 'next/router'
-import DetailsCard from '../components/detailsCard/DetailsCard'
-import Button from '../components/button/Button'
-import { toBinary } from '../utilities/common-utils'
 import Loader from '../components/loader/Loader'
 
 const OrderDetails = () => {
