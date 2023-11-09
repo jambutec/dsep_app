@@ -150,7 +150,7 @@ const pt: { [key: string]: string } = {
     emailRegister:
         'Mantenha-se atualizado com os últimos descontos enviando-nos um e-mail',
     yourEmail: 'Informe seu E-mail',
-    register: 'Registre-se',
+    register: 'Registrar',
     copyRight:
         '© 2023 Loja.dolinux.com.br. Todos direitos reservados - Desenhado e Desenvolvido com ',
     sort: 'Classificar com base em: ',
@@ -394,5 +394,15 @@ const pt: { [key: string]: string } = {
     of: 'de',
     myCourses: 'Meus cursos',
     purchased: 'comprou',
+    fetchingCourses: 'Buscando Cursos',
+    invalidEmail: 'Email Invalido',
+    passwordRequired: 'Informe uma senha',
+    pass8charlong: 'A senha deve ter 8 caracteres',
+    pass1upperCase:
+        'A senha deve ter pelo menos uma letra maiuscula, ex. letra A',
+    pass1SpecialChar: 'A senha deve conter pelo menos um caracter especial',
+    nameRequired: 'Nome é necessário',
+    nameContainLetterAndSpace: 'O nome deve conter somente letras e espaços',
+    signInText: 'Acessar',
 }
 export default pt

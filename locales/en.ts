@@ -389,5 +389,14 @@ const en: { [key: string]: string } = {
     of: 'of',
     myCourses: 'My Courses',
     purchased: 'Purchased',
+    fetchingCourses: 'Fetching Courses',
+    invalidEmail: 'Invalid Email',
+    passwordRequired: 'Password is required',
+    pass8charlong: 'Password must be at least 8 characters long',
+    pass1upperCase: 'Password must contain at least one uppercase letter',
+    pass1SpecialChar: 'Password must contain at least one special character',
+    nameRequired: 'Name is required',
+    nameContainLetterAndSpace: 'Name can only contain letters and spaces',
+    signInText: 'SignIn',
 }
 export default en

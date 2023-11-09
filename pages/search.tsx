@@ -27,11 +27,6 @@ const Search = () => {
 
     const { data, loading, error, fetchData } = useRequest()
 
-    const categoryMap = {
-        Books: { en: 'BookEnglish', fa: 'BookFrench' },
-        restaurant: { en: 'FoodEnglish', fa: 'FoodFrench' },
-    }
-
     useEffect(() => {
         if (!!searchKeyword) {
             localStorage.removeItem('searchItems')

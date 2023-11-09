@@ -14,6 +14,7 @@ const cartIconBlackList = [
     '/feedback',
     '/orderHistory',
     '/',
+    '/signUp',
     '/mobileOtp',
     '/cart',
     '/checkoutPage',
@@ -34,6 +35,7 @@ const storeHeaderBlackList = [
     '/orderConfirmation',
     'feedback',
     '/',
+    '/signUp',
     '/mobileOtp',
     '/paymentMode',
 ]
@@ -164,7 +166,7 @@ const TopHeader: React.FC<TopHeaderProps> = ({ handleMenuClick }) => {
             >
                 <div
                     onClick={() => {
-                        router.push('/orderHistory')
+                        router.push('/myLearningOrderHistory')
                     }}
                     className="flex gap-2 py-5"
                 >
