@@ -9,7 +9,7 @@ import useRequest from '../hooks/useRequest'
 import { RetailItem } from '../lib/types/products'
 import { getOrderPlacementTimeline } from '../utilities/confirm-utils'
 
-const myLearningOrderHistory = () => {
+const MyLearningOrderHistory = () => {
     const [coursesOrders, setCoursesOrders] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const { data, loading, error, fetchData } = useRequest()
@@ -151,4 +151,4 @@ const myLearningOrderHistory = () => {
     )
 }
 
-export default myLearningOrderHistory
+export default MyLearningOrderHistory
